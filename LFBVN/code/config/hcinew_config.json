@@ -1,0 +1,19 @@
+{
+    "train_dataset":{
+        "type":"HCInewDataset",
+        "batch_size": 20,
+        "args":{
+            "iters_in_one_epoch":1000,
+            "patch_size": 48,
+            "path":"../../../dataset/hci_dataset/additional"
+        }
+    },
+    "model_setting":{},
+    "device":"cuda:0",
+    "model":"LFBSN", 
+    "lr":0.0001,
+    "epochs":2000,
+    "save_epochs":200,
+    "log_file":"./log.txt",
+    "loss_name":"RenderLoss3"
+}
